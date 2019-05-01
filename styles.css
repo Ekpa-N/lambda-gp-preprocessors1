@@ -6,34 +6,34 @@
     font-size: 24px;
   }
 }
-.container {
+#petsContainer {
   margin: 0 auto;
   max-width: 800px;
 }
-.boxes {
+#petsContainer .boxes {
   display: flex;
 }
 @media(max-width: 750px) {
-  .boxes {
+  #petsContainer > .boxes {
     flex-direction: row-reverse;
   }
 }
 @media(max-width: 550px) {
-  .boxes {
+  #petsContainer .boxes {
     flex-direction: column;
   }
 }
 .box {
   padding: 1rem;
 }
-.box-a {
+.box.box-a {
   background-color: antiquewhite;
 }
-.box-b {
+.box.box-b {
   background-color: lightgrey;
   border: 0.25rem dashed black;
 }
-.box-c {
+.box.box-c {
   background-color: beige
 }
 header {
