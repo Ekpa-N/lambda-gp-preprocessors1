@@ -13,7 +13,7 @@
   max-width: 800px;
 }
 
-#petsContainer .boxes {
+#petsContainer>.boxes {
   display: flex;
 }
 
@@ -24,7 +24,7 @@
 }
 
 @media(max-width: 550px) {
-  #petsContainer .boxes {
+  #petsContainer>.boxes {
     flex-direction: column;
   }
 }
