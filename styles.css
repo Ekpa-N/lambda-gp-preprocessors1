@@ -13,18 +13,18 @@
   max-width: 800px;
 }
 
-#petsContainer>.boxes {
+#petsContainer .boxes {
   display: flex;
 }
 
 @media(max-width: 750px) {
-  #petsContainer>.boxes {
+  #petsContainer .boxes {
     flex-direction: row-reverse;
   }
 }
 
 @media(max-width: 550px) {
-  #petsContainer>.boxes {
+  #petsContainer .boxes {
     flex-direction: column;
   }
 }
@@ -55,18 +55,18 @@ header {
   color: white;
 }
 
+@media(max-width: 550px) {
+  header {
+    flex-direction: column;
+  }
+}
+
 footer {
   display: flex;
   align-items: baseline;
   justify-content: center;
   background-color: lightcoral;
   color: white;
-}
-
-@media(max-width: 550px) {
-  header {
-    flex-direction: column;
-  }
 }
 
 a {
