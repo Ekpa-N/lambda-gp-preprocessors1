@@ -8,6 +8,14 @@
 @desktopRootFontSize: 100%;
 @mobileRootFontSize: 150%;
 
+// colors
+@primaryColor: antiquewhite;
+@secondaryColor: lightgrey;
+
+// paddings
+@largePadding: 1rem;
+@mediumPadding: 0.5rem;
+
 :root {
   font-size: @desktopRootFontSize;
 
@@ -34,20 +42,21 @@
 }
 
 .box {
-  padding: 1rem;
+  padding: @largePadding;
 
   &.box-a {
-    background-color: antiquewhite;
+    background-color: @primaryColor;
   }
-}
 
-// .box.box-a {
-//   background-color: antiquewhite;
-// }
+  &.box-b {
+    background-color: @secondaryColor;
+    border: 0.25rem dashed black;
+  }
 
-.box.box-b {
-  background-color: lightgrey;
-  border: 0.25rem dashed black;
+  &.box-b {
+    background-color: @secondaryColor;
+    border: 0.25rem dashed black;
+  }
 }
 
 .box.box-c {
@@ -58,7 +67,7 @@ header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: @mediumPadding;
   background-color: lightcoral;
   color: white;
 }
