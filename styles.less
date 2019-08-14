@@ -1,14 +1,19 @@
 @import './reset.less';
 
-@mobileBreakpoint: 550px; 
+// breakpoints
+@mobileBreakpoint: 550px;
+
+// font sizes for root
+@desktopFontSize: 100%;
+@mobileFontSize: 150%;
 
 :root {
-  font-size: 100%;
+  font-size: @desktopFontSize;
 }
 
 @media(max-width: @mobileBreakpoint) {
   :root {
-    font-size: 150%;
+    font-size: @mobileFontSize;
   }
 }
 
