@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* box sizing border box */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  font-size: 100%;
+}
+@media (max-width: 550px) {
+  :root {
+    font-size: 150%;
+  }
+}
+#petsContainer {
+  margin: 0 auto;
+  max-width: 800px;
+}
+#petsContainer .boxes {
+  display: flex;
+}
+@media (max-width: 750px) {
+  #petsContainer .boxes {
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 550px) {
+  #petsContainer .boxes {
+    flex-direction: column;
+  }
+}
+.box {
+  padding: 1rem;
+}
+.box.box-a {
+  background-color: antiquewhite;
+}
+.box.box-b {
+  background-color: lightgrey;
+  border: 0.25rem dashed black;
+}
+.box.box-c {
+  background-color: lightgrey;
+}
+.box.box-c {
+  background-color: beige;
+}
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: lightcoral;
+  color: white;
+  transition: 1s ease-in-out;
+}
+header:hover {
+  transition: 1s ease-in-out;
+  background-color: green;
+}
+@media (max-width: 550px) {
+  header {
+    flex-direction: column;
+  }
+}
+footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background-color: lightcoral;
+  color: white;
+}
+a {
+  color: inherit;
+}
+h1,
+h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p {
+  margin-top: 0.5rem;
+}
+footer {
+  font-size: 75%;
+}
+footer p {
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 0.25em solid white;
+}
+article p:nth-of-type(1) {
+  color: green;
+}
+article p:nth-of-type(2) {
+  color: blue;
+  line-height: 1.5;
+}
