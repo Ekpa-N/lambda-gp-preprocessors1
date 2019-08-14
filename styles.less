@@ -16,6 +16,13 @@
 @largePadding: 1rem;
 @mediumPadding: 0.5rem;
 
+// mixins
+.my-flex-defaults() {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 :root {
   font-size: @desktopRootFontSize;
 
@@ -63,9 +70,8 @@
 }
 
 header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  .my-flex-defaults();
+
   padding: @mediumPadding;
   background-color: lightcoral;
   color: white;
