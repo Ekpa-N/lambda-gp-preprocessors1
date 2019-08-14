@@ -2,6 +2,7 @@
 
 // breakpoints
 @mobileBreakpoint: 550px;
+@tabletBreakpoint: 750px;
 
 // font sizes for root
 @desktopRootFontSize: 100%;
@@ -21,22 +22,14 @@
 
   .boxes {
     display: flex;
-  }
-}
 
-// #petsContainer .boxes {
-//   display: flex;
-// }
+    @media(max-width: @tabletBreakpoint) {
+      flex-direction: row-reverse;
+    }
 
-@media(max-width: 750px) {
-  #petsContainer .boxes {
-    flex-direction: row-reverse;
-  }
-}
-
-@media(max-width: @mobileBreakpoint) {
-  #petsContainer .boxes {
-    flex-direction: column;
+    @media(max-width: @mobileBreakpoint) {
+      flex-direction: column;
+    }
   }
 }
 
